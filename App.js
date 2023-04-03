@@ -5,8 +5,6 @@ import {colors} from './src/global/styles'
 
 export default function App() {
 
-
-
   return (
 <View style={styles.container}>
 <StatusBar 
