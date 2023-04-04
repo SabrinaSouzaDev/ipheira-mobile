@@ -15,3 +15,7 @@ export const parameters = {
     headerHeight: 40,
     
 };
+
+export const title = {
+    
+}
