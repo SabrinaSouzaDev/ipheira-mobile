@@ -1,5 +1,5 @@
 
-TypeScript | Expo  | React-Native
+Javascript | Expo  | React-Native
 
 ambiente da maquina
 
@@ -21,21 +21,17 @@ Local:
 
 recomenda-se:
 
-yarn add @types/jest @types/react @types/react-native
 
-yarn add --dev babel-plugin-module-resolver
-
-yarn add --dev @tsconfig/react-native @types/jest @types/react @types/react-test-renderer typescript
 
 Consultar Docs:
 
 https://reactnativeelements.com/docs/installation#using-expo
 
-https://docs.expo.dev/guides/typescript/
+https://docs.expo.dev/guides
 
-https://babeljs.io/docs/babel-plugin-syntax-bigint#installation
+https://babeljs.io/docs
 
-https://reactnative.dev/docs/typescript
+https://reactnative.dev/docs
 
 Iniciar projeto
 
