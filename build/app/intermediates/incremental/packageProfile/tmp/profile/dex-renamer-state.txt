@@ -1,0 +1,4 @@
+#Sat Apr 08 23:23:01 BRT 2023
+base.0=/home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/intermediates/dex/profile/mergeDexProfile/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

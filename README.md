@@ -1,46 +1,44 @@
+<h2 align="center">flutterprojetfeira</h2>
 
-TypeScript | Expo  | React-Native
 
-ambiente da maquina
+<h3>Getting Started</h3>
 
-Global:
+This project is a starting point for a Flutter application.
 
-node v16.16.0
+A few resources to get you started if this is your first Flutter project:
 
-npm 9.6.3
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-yarn 1.22.19
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
 
-expo 6.3.2
+<h2 align="center"><strong >Como instalar Flutter Linux.</strong></h2>
 
-recomenda-se npm uninstall -g react-native-cli @react-native-community/cli
+<h3>Requisitos de sistema:</h3>
 
-sudo yarn global add expo-cli
+<lu>Para instalar e executar o Flutter, seu ambiente de desenvolvimento deve atender a estes requisitos mínimos:
+    <li> Sistemas operacionais : Linux (64 bits)</li>
+    <li> Espaço em disco : 600 MB (não inclui espaço em disco para IDE/ferramentas).</li>
+    </lu>
+    
+Doc:
 
-Local:
+<a href="https://docs.flutter.dev/%20get-started/install/linux" title="Documentação flutter">Link da documentação Flutter</a>
 
-recomenda-se:
+Para instalar seguir tutorial de melhor configuração da bash:
 
-yarn add @types/jest @types/react @types/react-native
+<a href="https://www.youtube.com/watch?v=4VmhqluLO3k&t=922s&ab_channel=ActiveScienceLKProf.Kozovits" title="Flutter em Linux Ubuntu">Instalação do ambiente de desenvolvimento Flutter em Linux Ubuntu</a>
 
-yarn add --dev babel-plugin-module-resolver
+Outra opção de tutorial:
 
-yarn add --dev @tsconfig/react-native @types/jest @types/react @types/react-test-renderer typescript
+<a href="https://www.youtube.com/watch?v=Esb7zwEIHv8&ab_channel=TechTime" title="Outra opção em Linux Ubuntu">Para Instalação do ambiente de desenvolvimento Flutter em Linux Ubuntu </a>
 
-Consultar Docs:
+Uma indicação útil que pode ajudar, é instalar no versionador de codigo <Strong>VS code</Strong> o pacote 
+<strong>Ultimate Flutter Extension Pack</strong>
 
-https://reactnativeelements.com/docs/installation#using-expo
+Para Criar o projeto vamos usar o comando no terminal.
 
-https://docs.expo.dev/guides/typescript/
+flutter create -t app --org com.USUAIO.ORGANIZAÇÃO --platforms android,ios -a kotlin -i swift NOME- DO-PROJECT
 
-https://babeljs.io/docs/babel-plugin-syntax-bigint#installation
-
-https://reactnative.dev/docs/typescript
-
-Iniciar projeto
-
-Yarn install
-
-yarn start
-
-# ipheira
