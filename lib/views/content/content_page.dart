@@ -21,9 +21,9 @@ class ContentPage extends StatefulWidget {
 
 class _ContentPageState extends State<ContentPage>
     with SingleTickerProviderStateMixin {
-  TabController tabController;
+  TabController? tabController;
   final controller = ContentController();
-  List<Category> categories;
+  late List<Category> categories = [];
   @override
   void initState() {
     tabController = TabController(length: 2, vsync: this);
@@ -46,8 +46,9 @@ class _ContentPageState extends State<ContentPage>
                 location: 'Rua do fio, Belém do Pará',
               ),
               ContentTabBarComponent(
-                controller: tabController,
+                controller: tabController!,
                 onTap: (index) {},
+                isScrollable: true,
               ),
               FiltersComponent(),
             ];
@@ -56,8 +57,8 @@ class _ContentPageState extends State<ContentPage>
             children: [
               Expanded(
                 child: RefreshIndicator(
-                  onRefresh: () async {
-                    return await Future.value();
+                  onRefresh: () {
+                    return Future.value();
                   },
                   child: CustomScrollView(
                     physics: BouncingScrollPhysics(),
@@ -107,7 +108,7 @@ class _ContentPageState extends State<ContentPage>
 class _CategorySession extends StatelessWidget {
   final List<Category> categories;
 
-  const _CategorySession({Key key, @required this.categories})
+  const _CategorySession({Key? key, required this.categories})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -162,39 +163,40 @@ class _BannerSession extends StatelessWidget {
   }
 }
 
-class _BottomNavigator extends StatelessWidget {
-  final Function(int) onTap;
-  final int currentIndex;
+  class _BottomNavigator extends StatelessWidget {
+    final Function(int) onTap;
+    final int currentIndex;
 
-  const _BottomNavigator(
-      {Key key, @required this.onTap, @required this.currentIndex})
-      : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return BottomNavigatorComponent(
-      onTap: onTap,
-      currentIndex: currentIndex,
-      items: [
-        BottomNavigatorItemComponent(
-          label: 'Início',
-          activeIcon: AppIcons.homeActive,
-          icon: AppIcons.home,
-        ),
-        BottomNavigatorItemComponent(
+    const _BottomNavigator(
+        {Key? key, required this.onTap, required this.currentIndex})
+        : super(key: key);
+    @override
+    Widget build(BuildContext context) {
+      return BottomNavigatorComponent(
+        onTap: onTap,
+        currentIndex: currentIndex,
+        items: [
+          BottomNavigatorItemComponent(
+            label: 'Início',
+            activeIcon: AppIcons.homeActive,
+            icon: AppIcons.home,
+          ),
+          BottomNavigatorItemComponent(
             label: 'Busca',
             activeIcon: AppIcons.searchActive,
-            icon: AppIcons.search),
-        BottomNavigatorItemComponent(
-          label: 'Pedidos',
-          activeIcon: AppIcons.ordersActive,
-          icon: AppIcons.orders,
-        ),
-        BottomNavigatorItemComponent(
-          label: 'Perfil',
-          activeIcon: AppIcons.profileActive,
-          icon: AppIcons.profile,
-        ),
-      ],
-    );
+            icon: AppIcons.search,
+          ),
+          BottomNavigatorItemComponent(
+            label: 'Pedidos',
+            activeIcon: AppIcons.ordersActive,
+            icon: AppIcons.orders,
+          ),
+          BottomNavigatorItemComponent(
+            label: 'Perfil',
+            activeIcon: AppIcons.profileActive,
+            icon: AppIcons.profile,
+          ),
+        ],
+      );
+    }
   }
-}

@@ -7,12 +7,12 @@ class BottomNavigatorComponent extends StatelessWidget {
   final int currentIndex;
   final Function(int) onTap;
 
-  const BottomNavigatorComponent(
-      {Key key,
-      @required this.items,
-      this.currentIndex = 0,
-      @required this.onTap})
-      : super(key: key);
+  const BottomNavigatorComponent({
+    Key? key,
+    required this.items,
+    this.currentIndex = 0,
+    required this.onTap,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -48,31 +48,34 @@ class BottomNavigatorItemComponent extends StatelessWidget {
   final String activeIcon;
   final String icon;
   final bool isActive;
-  final Function onTap;
+  final void Function()? onTap;
 
-  BottomNavigatorItemComponent copyWith(
-      {String label,
-      String activeIcon,
-      String icon,
-      bool isActive,
-      Function onTap}) {
+  const BottomNavigatorItemComponent({
+    Key? key,
+    required this.label,
+    required this.activeIcon,
+    required this.icon, // adicionando o modificador required aqui
+    this.isActive = false,
+    this.onTap,
+  }) : super(key: key);
+
+  BottomNavigatorItemComponent copyWith({
+    String? label,
+    String? activeIcon,
+    String? icon,
+   
+    bool? isActive,
+    void Function()? onTap,
+  }) {
     return BottomNavigatorItemComponent(
       label: label ?? this.label,
       activeIcon: activeIcon ?? this.activeIcon,
       icon: icon ?? this.icon,
-      isActive: isActive ?? this.activeIcon,
+      isActive: isActive ?? this.isActive,
       onTap: onTap ?? this.onTap,
     );
   }
 
-  const BottomNavigatorItemComponent(
-      {Key key,
-      @required this.label,
-      @required this.activeIcon,
-      @required this.icon,
-      this.isActive = false,
-      this.onTap})
-      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -81,12 +84,13 @@ class BottomNavigatorItemComponent extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Column(
           children: [
-            AppIcon(isActive ? activeIcon : icon),
+            AppIcon(isActive ? activeIcon : icon, color: Colors.black,size: Size(24,24)),
             Text(
               label,
               style: TextStyle(
-                  fontSize: 10,
-                  fontWeight: isActive ? FontWeight.bold : FontWeight.normal),
+                fontSize: 10,
+                fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
+              ),
             ),
           ],
         ),

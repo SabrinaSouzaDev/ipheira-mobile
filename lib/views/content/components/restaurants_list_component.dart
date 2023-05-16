@@ -7,7 +7,7 @@ import 'package:flutterprojetfeira/models/restaurant.dart';
 class RestaurantItemComponent extends StatefulWidget {
   final Restaurant restaurant;
 
-  const RestaurantItemComponent({Key key, @required this.restaurant})
+  const RestaurantItemComponent({Key? key, required this.restaurant})
       : super(key: key);
 
   @override
@@ -16,7 +16,6 @@ class RestaurantItemComponent extends StatefulWidget {
 }
 
 class _RestaurantItemComponentState extends State<RestaurantItemComponent> {
-
   @override
   void initState() {
     super.initState();

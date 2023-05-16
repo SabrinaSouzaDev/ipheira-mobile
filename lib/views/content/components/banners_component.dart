@@ -4,7 +4,7 @@ import 'package:flutterprojetfeira/core/theme/app_colors.dart';
 class BannersComponent extends StatefulWidget {
   final List<BannerItemComponent> list;
 
-  const BannersComponent({Key key, this.list}) : super(key: key);
+  BannersComponent({Key? key, required this.list}) : super(key: key);
 
   @override
   _BannersComponentState createState() => _BannersComponentState();
@@ -19,9 +19,9 @@ class _BannersComponentState extends State<BannersComponent> {
     _pageController.addListener(_onChangePage);
   }
 
-  _onChangePage() {
+  void _onChangePage() {
     setState(() {
-      _currentIndex = _pageController.page.round();
+      _currentIndex = _pageController.page!.round();
     });
   }
 
@@ -54,7 +54,7 @@ class _BannersComponentState extends State<BannersComponent> {
                   .map((e) => Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 4.0),
                         child: AnimatedContainer(
-                          duration: Duration(milliseconds: 200),
+                          duration: const Duration(milliseconds: 200),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: widget.list.indexOf(e) == _currentIndex
@@ -77,7 +77,7 @@ class _BannersComponentState extends State<BannersComponent> {
 class BannerItemComponent extends StatelessWidget {
   final String imagePath;
 
-  const BannerItemComponent({Key key, this.imagePath}) : super(key: key);
+  const BannerItemComponent({Key? key, required this.imagePath}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(

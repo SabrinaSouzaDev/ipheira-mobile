@@ -8,13 +8,18 @@ class ContentTabBarComponent extends StatelessWidget {
   final TabController controller;
   final Function(int) onTap;
 
-  const ContentTabBarComponent(
-      {Key key, @required this.controller, @required this.onTap})
-      : super(key: key);
+  const ContentTabBarComponent({
+    Key? key,
+    required this.controller,
+    required this.onTap, required bool isScrollable,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SliverPersistentHeader(
       delegate: _ContentTabBarComponentDelegate(controller, onTap),
+      floating: true,
+      pinned: true,
     );
   }
 }

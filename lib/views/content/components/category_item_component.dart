@@ -6,8 +6,7 @@ import 'package:flutterprojetfeira/models/category.dart';
 class CategoryItemComponent extends StatelessWidget {
   final Category category;
 
-
-  const CategoryItemComponent({Key key, @required this.category}) : super(key: key);
+  const CategoryItemComponent({Key? key, required this.category}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -21,7 +20,7 @@ class CategoryItemComponent extends StatelessWidget {
           padding: const EdgeInsets.only(top: 6.0),
           child: Text(
             category?.name?? '',
-            style: AppTypography.small(context).copyWith(color: AppColors.grey),
+            style: AppTypography.small(context)!.copyWith(color: AppColors.grey),
           ),
         ),
       ],

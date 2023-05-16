@@ -11,18 +11,18 @@ class Restaurant {
   final String photoUrl;
 
   Restaurant({
-    @required this.name,
-    @required this.category,
-    @required this.deliveryTaxe,
-    @required this.distance,
-    @required this.rate,
-    @required this.time,
-    @required this.favorite,
-    @required this.photoUrl,
+    required this.name,
+    required this.category,
+    required this.deliveryTaxe,
+    required this.distance,
+    required this.rate,
+    required this.time,
+    required this.favorite,
+    required this.photoUrl,
   });
 
   Restaurant changeFav({
-    bool favorite,
+    bool? favorite,
   }) {
     return Restaurant(
       name: this.name,

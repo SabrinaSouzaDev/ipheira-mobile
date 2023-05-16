@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -30,17 +32,29 @@ class AppIcon extends StatelessWidget {
   final Color color;
   const AppIcon(
     this.icon, {
-    Key key,
-    this.size,
-    this.color,
+    Key? key,
+    required this.size,
+    required this.color,
   }) : super(key: key);
-  @override
+@override
   Widget build(BuildContext context) {
     return SvgPicture.asset(
       icon,
       height: size?.height ?? 24,
       width: size?.width ?? 24,
-      color: color ?? Colors.black,
+      color: color,
+      colorFilter: ColorFilter.mode(
+        color ?? Colors.black,
+        BlendMode.srcIn,
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
