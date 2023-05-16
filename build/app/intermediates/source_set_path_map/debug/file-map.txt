@@ -1,21 +1,12 @@
 com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-window-java-1.0.0-beta04-0 /home/sabrina/.gradle/caches/transforms-3/006d93cd422dbc43e89591147c2de572/transformed/jetified-window-java-1.0.0-beta04/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-play-services-base-18.0.1-1 /home/sabrina/.gradle/caches/transforms-3/082fa8f1e076fd76c98f4d760b4e67b1/transformed/jetified-play-services-base-18.0.1/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-play-services-basement-18.2.0-2 /home/sabrina/.gradle/caches/transforms-3/10e411e408063a3ed7eb4e7e19983f6d/transformed/jetified-play-services-basement-18.2.0/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-play-services-auth-20.5.0-3 /home/sabrina/.gradle/caches/transforms-3/2f242034b75eb25a4a42e0262b447777/transformed/jetified-play-services-auth-20.5.0/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-browser-1.4.0-4 /home/sabrina/.gradle/caches/transforms-3/392643a040d0a7ef9b2ed4537c4719d5/transformed/browser-1.4.0/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-core-1.6.0-5 /home/sabrina/.gradle/caches/transforms-3/4ca28c4a71705f8a687c69dda140a277/transformed/core-1.6.0/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-annotation-experimental-1.1.0-6 /home/sabrina/.gradle/caches/transforms-3/8965c941cf4bee4d72541b965c7c9d39/transformed/jetified-annotation-experimental-1.1.0/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-firebase-common-20.3.2-7 /home/sabrina/.gradle/caches/transforms-3/ac7b423c18e0e9c28c2a8c784d1125eb/transformed/jetified-firebase-common-20.3.2/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-window-1.0.0-beta04-8 /home/sabrina/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-debug-9 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/android/app/src/debug/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-main-10 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/android/app/src/main/res
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-pngs-11 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/generated/res/pngs/debug
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-resValues-12 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/generated/res/resValues/debug
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-rs-13 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/generated/res/rs/debug
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-mergeDebugResources-14 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-mergeDebugResources-15 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-merged_res-16 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/intermediates/merged_res/debug
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-packaged_res-17 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/firebase_auth/intermediates/packaged_res/debug
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-packaged_res-18 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/firebase_core/intermediates/packaged_res/debug
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-packaged_res-19 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/google_sign_in_android/intermediates/packaged_res/debug
-com.sabrinasouza.ipherapp.flutterprojetfeira.app-packaged_res-20 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/path_provider_android/intermediates/packaged_res/debug
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-core-1.6.0-1 /home/sabrina/.gradle/caches/transforms-3/4ca28c4a71705f8a687c69dda140a277/transformed/core-1.6.0/res
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-annotation-experimental-1.1.0-2 /home/sabrina/.gradle/caches/transforms-3/8965c941cf4bee4d72541b965c7c9d39/transformed/jetified-annotation-experimental-1.1.0/res
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-jetified-window-1.0.0-beta04-3 /home/sabrina/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-debug-4 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/android/app/src/debug/res
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-main-5 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/android/app/src/main/res
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-pngs-6 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/generated/res/pngs/debug
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-resValues-7 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/generated/res/resValues/debug
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-rs-8 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/generated/res/rs/debug
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-mergeDebugResources-9 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-mergeDebugResources-10 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.sabrinasouza.ipherapp.flutterprojetfeira.app-merged_res-11 /home/sabrina/Documentos/Flutter playground/flutterprojetfeira/build/app/intermediates/merged_res/debug
